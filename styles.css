@@ -179,15 +179,17 @@ button:hover {
     body {
         min-height: auto;
         flex-direction: column;
+        width: 100%;
     }
 
     .left {
-        width: 25rem;
+        width: 100%;
     }
 
     .logo {
         margin: 5rem;
         background-color: rgb(0,0,0,0);
+        width: 100%;
     }
 
     .photo-text {
@@ -200,4 +202,26 @@ button:hover {
         margin-top: 0;
     }
 
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        min-width: 320px;
+    }
+
+    form, .second-title, .description {
+        padding-left: 2rem;
+    }
+
+    .section-2 {
+        min-height: 600px;
+    }
+
+    .section-3 {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
 }

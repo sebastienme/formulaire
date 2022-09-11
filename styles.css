@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --special-font: 'Titan One', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    font-family: var(--main-font);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 35%;
+    background-image: url("images/pramod-tiwari-g-CX211ErUQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    background-color: rgb(0,0,0,0.5);
+    margin-top: 10rem;
+    min-height: 2em;
+}
+
+.logo-text {
+    font-family: var(--special-font);
+}
+
+.photo-text {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: 200;
+}
+
+.photo-text a {
+    color: white;
+    text-decoration: underline;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 65%;
+}
+
+.section-1 {
+    min-height: 35%;
+    background-color: rgb(240, 240, 240);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 5em;
+    padding: 3rem;
+}
+
+.section-2 {
+    min-height: 30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
+}
+
+.second-title {
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    font-family: var(--special-font);
+}
+
+.description {
+    padding-left: 3rem;
+    font-weight: 300;
+    font-style: italic;
+    padding-bottom: 25px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 15rem;
+    row-gap: 20px;
+    padding-left: 3rem;
+}
+
+input {
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    font-size: 16px;
+    font-size: 1rem;
+    min-width: 300px;
+}
+
+
+:focus {
+    outline: 0;
+}
+
+input:valid {
+    border: 1px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.25);
+}
+
+input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid #b92326
+}
+
+label {
+    min-width: 300px;
+    font-weight: 700;
+}
+
+textarea, input {
+    outline: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.section-3 {
+    min-height: 35%;
+    background-color: rgb(240, 240, 240);
+}
+
+.button {
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+button {
+    background-color: rgb(75,123,145);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: var(--main-font);
+    font-size: 20px;
+    border: none;
+    padding: 25px;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+button:hover {
+    background-color: rgba(75,123,145, 0.50);
+}
+
+.account {
+    padding-left: 3rem;
+    margin-top: 1rem;
+}
+
+.log-in {
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 980px) {
+    body {
+        min-height: auto;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 25rem;
+    }
+
+    .logo {
+        margin: 5rem;
+        background-color: rgb(0,0,0,0);
+    }
+
+    .photo-text {
+        font-size: 8px;
+    }
+
+    .title {
+        font-size: 14px;
+        width: 25rem;
+        margin-top: 0;
+    }
+
+}

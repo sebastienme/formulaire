@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="left">
+        <div class="logo"><span class="logo-text">Booh!</span></div>
+        <div class="photo-text">Photo par <a href="https://unsplash.com/photos/g-CX211ErUQ">Pramod Tiwari</a></div>
+    </section>
+    <section class="right">
+        <div class="section-1">
+            <div class="title">Ce n'est pas une vrai invitation à party d'halloween! Quoi que ça serait ben l'fun! <br>
+                Inscris-toi pour voir. <br><br>
+                Je sais que tu veux voir.
+            </div>
+        </div>
+        <div class="section-2">    
+            <div class="second-title">Date: 31 octobre 1867</div>
+            <div class="description">(c'est plus effrayant quand c'est vieux)</div>
+            <form id="form-1" action="http://httpbin.org/post" method="post">
+                <label for="first_name">PRÉNOM<input type="text" id="first_name" name="first_name" placeholder="Michael" value="" required></label>
+                <label for="last_name">NOM<input type="text" id="last_name" name="last_name" placeholder="Myers" required></label>
+                <label for="email">COURRIEL<input type="email" id="email" name="email" placeholder="mmyers@hotmail.com" required></label>
+                <label for="phone">NUMÉRO DE TÉLÉPHONE<input type="tel" id="phone" name="phone" placeholder="450-223-2277" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                <label for="password">MOT DE PASSE<input type="password" id="password" name="password" required></label>
+                <label for="confirm-password">CONFIRMER MOT DE PASSE<input type="password" id="confirm-password" name="confirm-password" required></label>
+            </form>
+        </div>   
+        <div class="section-3">
+            <div class="button"><button type="submit" form="form-1">Envoyer l'invitation</button></div>
+            <div class="account">Déjà un compte? <span class="log-in">Connexion</span></div>
+        </div>
+    </section>
+</body>
+</html>
